@@ -7,7 +7,7 @@ cwd = os.getcwd()
 files = os.listdir(cwd)
 
 # Create an empty list to store file information
-file_list = []
+dict_list = []
 
 # Iterate over each file in the directory
 for file_name in files:
@@ -33,9 +33,9 @@ for file_name in files:
     }
     
     # Add the file information to the list
-    file_list.append(file_info)
+    dict_list.append(file_info)
 
 # Print each file dictionary on a new line
-for file_info in file_list:
+for file_info in dict_list:
     print(file_info)
     print()
